@@ -1,0 +1,128 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(PressStart2P-Regular.ttf);
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  align-items: center;
+  justify-content: space-between; 
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 2vh; 
+  font-size: 4vh; 
+  z-index: 1; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh; 
+  overflow: hidden;
+}
+
+.rps {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  width: 100%;
+  height: 33%; 
+}
+
+.rps input[type=image] {
+  width: 45vh; 
+  height: 45vh;
+  max-width: 180px;
+  height: auto; 
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33%; 
+}
+
+.middle h2 {
+  font-size: 3vh;
+  margin: 0;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33%; 
+}
+
+.end #image {
+  width: 22vh; 
+  max-width: 180px; 
+  height: auto;
+}
+
+#output {
+  color: white;
+  text-align: center;
+}
+
+input[type=image]:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 6vh;
+  }
+
+  .rps input[type=image], .end #image {
+      width: 30vh; 
+      max-width: 120px;
+  }
+
+  .middle h2 {
+      font-size: 4vh;
+  }
+}
+
+#resetButton {
+  width: 175px; 
+  height: 65px; 
+  font-family: myFirstFont;
+  background-color: red; 
+  color: white; 
+  border: 5px solid darkred; 
+  font-size: 20px; 
+  text-align: center; 
+  box-shadow: 10px 10px 0px 0px darkred; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  }
+  
+.resetButton:hover {
+      background-color: darkred;
+  }
+ 

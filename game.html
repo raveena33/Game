@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="game.css"/>
+    <script src="gameHard.js"></script>
+    <script src="game.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <button id="home" onclick="location.href='game.html'">
+        <img src="bugsbunny.jpg" alt="logo" width="241px" height="150px">
+    </button>
+    <button id="questionButton">
+        <img src="questionmark.png" alt="Question Image" width="50" height="50">
+    </button>
+    <div id="instructionsBox">
+        <strong>INSTRUCTIONS</strong><br>
+        Memorize the sequence of shapes that are highlighted, then press them in order. Each time you finish, the pattern gets longer.
+    </div>
+    
+    <div id="header">
+        
+    
+    </div>
+    <div class="row">
+        <h1>Shape Memorization Game <br><br></h1>
+    </div>
+    <div id = "score">
+         
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="game">
+            <div class="shape"><input type="image" src="circle.png" width = 200% onclick="rps(this.id)" id="0"></div>
+            <div class="shape"><input type="image" src="square.png" onclick="rps(this.id)" id="1"></div>
+            <div class="shape"><input type="image" src="triangle.png" onclick="rps(this.id)" id="2"></div>
+            <div class="shape"><input type="image" src="diamond.png" onclick="rps(this.id)" id="3"></div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="button">
+        <button onclick="easy()" id="button1">Easy</button>
+        <button onclick="hard()" id="button2">Hard</button>
+        <br>
+        <br><br>
+        <h3>INSTRUCTIONS<br>Memorize the sequence of shapes that are highlighted, then press them in order. Each time you finish, the pattern gets longer.
+        </h3>
+        <h4 id = start> SELECT THE EASY OR HARD DIFFICULTY LEVEL TO START </h4>
+    </div>
+    <div id = "revive">
+        
+    </div>
+   
+</body>
+</html>

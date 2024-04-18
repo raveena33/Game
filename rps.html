@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="rps.css"/>
+    <script src="rps.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <div class="row">
+        <h1>ROCK PAPER SCISSORS</h1>
+    </div>
+
+    <div class="container">
+        <div class="rps">
+            <input type="image" src="rock.png" onclick="rps(this.id)" id="rock">
+            <input type="image" src="paper.png" onclick="rps(this.id)" id="paper">
+            <input type="image" src="scissors.png" onclick="rps(this.id)" id="scissors">
+        </div>
+
+        <div class="middle">
+            <h2>
+                <br><br>
+                VS
+                <strong><p id="output"></p></strong>
+<button id="resetButton" style="display:none;" onclick="resetGame()">Button</button>
+<button id="tryAgainButton" style="display:none;" onclick="resetGame('tryAgain')">Try Again</button>
+<button id="resumeButton" style="display:none;" onclick="resetGame('resume')">Resume</button>
+            </h2>
+        </div>
+        <div class="end">
+            <img id="image" src="question.png">
+        </div>
+    </div>
+</body>
+</html>

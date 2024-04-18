@@ -1,0 +1,143 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(PressStart2P-Regular.ttf);
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  font-family: myFirstFont;
+  text-align: center;
+  width:100%;
+  height:100%; 
+  transform: scale(0.85);
+  
+}
+#header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.header-button {
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+h1, h2 {
+  color: black;
+  margin: 50x 0;
+ font-size: 40px;
+}
+h3{
+  font-size: 20px;
+  padding: 30px;
+}
+
+.button {
+  margin-top: 20px;
+
+}
+#home{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px; 
+  margin: 0 auto; 
+ 
+}
+#start{
+  color:red;
+}
+#score{
+  color:green;
+  font-size: 20px;
+}
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+input[type=image] {
+  width: 100px;
+  height: 100px;
+    object-fit: contain; 
+}
+
+input[type=image]:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+.highlighted {
+  border: 4px solid gold; 
+  box-shadow: 0 0 10px gold; 
+  transform: scale(1.05); 
+  transition: transform 0.3s ease, 
+}
+
+.shape input[type='image']:hover {
+  
+  opacity: 0.7; 
+  cursor: pointer; 
+}
+
+#button1, #button2{
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+
+#button:hover {
+  background-color: #45a049; 
+}
+}
+
+#questionButton {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
+#instructionsBox {
+  position: absolute;
+  top: 200px;
+  left: 105px;
+  display: none;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+
+#questionButton:hover + #instructionsBox {
+  display: block;
+}
